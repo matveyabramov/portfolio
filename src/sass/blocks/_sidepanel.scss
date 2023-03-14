@@ -1,0 +1,28 @@
+.sidepanel {
+    position: fixed;
+    top: 370px;
+    left: -88px;
+    z-index: 1;
+    transform: rotate(-90deg);
+    width: 297px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+    &__divider {
+        width: 70px;
+        height: 0;
+        border: 2px solid #FFFFFF;
+    }
+    &__social {
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
