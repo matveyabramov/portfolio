@@ -8,7 +8,8 @@
     }
     &__grid-container {
         display: grid;
-        grid-template: 430px 140px / 400px 660px;
+        grid-template: minmax(375px, auto) minmax(140px, auto) / 400px 660px;
+        grid-auto-rows: minmax(375px, auto);
         gap: 70px;
     }
     &__img {
@@ -16,30 +17,35 @@
         width: 400px;
         grid-row: 1/3;
     }
-    &__subgrid-container {
+    &__text {
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &__skills {
         padding-left: 60px;
         display: grid;
         grid-template-columns: repeat(2, 260px);
         row-gap: 50px;
         column-gap: 110px;
-    }
-    &__text {
-        margin-top: 20px;
-    }
-    &__skill-group {
-        position: relative;
-        @include before-circle;
-        &:before {
-            top: 5px;
-            left: -60px;
-        }
-        &:first-child {
-            @include after_icon ('../icons/web_development.svg');
-        }
-        &:nth-child(2) {
-            @include after_icon ('../icons/design.svg');
-            &:after {
-                height: 21px
+        &-group {
+            position: relative;
+            @include before-circle;
+            &:before {
+                top: 5px;
+                left: -60px;
+            }
+            &:first-child {
+                @include after_icon ('../icons/web_development.svg');
+            }
+            &:nth-child(2) {
+                @include after_icon ('../icons/design.svg', 21px);
+            }
+            &__text {
+                font-size: 12px;
+                font-weight: 500;
+                width: 200px;
+                margin-top: 6px;
             }
         }
     }
