@@ -25,21 +25,20 @@
     &__skills {
         padding-left: 60px;
         display: grid;
-        grid-template-columns: repeat(2, 260px);
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr); 
         row-gap: 50px;
         column-gap: 110px;
         &-group {
             position: relative;
             @include before-circle;
             &:before {
-                top: 5px;
+                top: 0;
                 left: -60px;
             }
-            &:first-child {
-                @include after_icon ('../icons/web_development.svg');
-            }
-            &:nth-child(2) {
-                @include after_icon ('../icons/design.svg', 21px);
+            &-icon {
+                position: absolute;
+                top: 15px;
+                left: -45px;
             }
             &__text {
                 font-size: 12px;

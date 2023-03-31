@@ -11,16 +11,3 @@
         background: $main_color;
     }
 }
-
-@mixin after_icon ($url, $height: 24px) {
-    &:after {
-        content: '';
-        position: absolute;
-        left: -45px;
-        top: 20px;
-        display: block;
-        width: 25px;
-        height: $height;
-        background: url($url) center (center/cover) no-repeat;
-    }
-}
