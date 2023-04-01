@@ -46,16 +46,17 @@
         row-gap: 38px;
         column-gap: 45px;
         &__item {
-            &__body {
+            &__line {
                 width: 350px;
                 height: 14px;
                 background-color: #E8E4DE;
                 border-radius: 4px;
-            }
-            &__status {
-                height: 100%;
-                border-radius: 4px;
-                background-color: $main_color;
+                span {
+                    display: block;
+                    height: 100%;
+                    border-radius: 4px;
+                    background-color: $main_color;
+                }
             }
             &__text {
                 position: relative;
@@ -67,6 +68,11 @@
                 &:before {
                     top: -30%;
                 }
+            }
+            &__percent {
+                font-weight: 500;
+                font-size: 14px;
+                color: #000;
             }
         }
     }

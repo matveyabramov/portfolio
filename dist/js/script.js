@@ -14,3 +14,10 @@ close.addEventListener('click', () => {
 overlay.addEventListener('click', () => {
     menu.classList.remove('active');
 });
+
+const percents = document.querySelectorAll('.skills__progress-bars__item__percent'),
+    lines = document.querySelectorAll('.skills__progress-bars__item__line span');
+
+percents.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+});
