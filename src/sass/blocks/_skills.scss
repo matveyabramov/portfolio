@@ -1,22 +1,6 @@
 .skills {
     min-height: 1024px;
-    padding: 120px 0;
-    h2 {
-        position: relative;
-        text-align: center;
-        @include before-circle;
-        &:before {
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-    &__title {
-        text-align: center;
-    }
-    .divider {
-        margin: 0 auto;
-        margin-top: 25px;
-    }
+    padding-top: 120px;
     &__wrapper {
         margin-top: 60px;
         display: grid;
