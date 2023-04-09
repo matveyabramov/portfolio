@@ -6,9 +6,9 @@
         padding-left: 12px;
         @include before_circle;
     }
-    &__grid-container {
+    &__container {
         display: grid;
-        grid-template: minmax(375px, auto) minmax(140px, auto) / 400px 660px;
+        grid-template: minmax(375px, auto) minmax(140px, auto) / 400px 600px;
         grid-auto-rows: minmax(375px, auto);
         gap: 70px;
     }
