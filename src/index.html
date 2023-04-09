@@ -278,11 +278,11 @@
                         <div class="title title_fz14 contacts__text">Or leave your details and I’ll write  you myself:</div>
                         <form action="#" class="contacts__form">
                             <div class="contacts__input">
-                                <input name="name" id="name" type="text">
+                                <input required name="name" id="name" type="text">
                                 <label for="name">Name</label>
                             </div>
                             <div class="contacts__input">
-                                <input name="email" id="email" type="email">
+                                <input required name="email" id="email" type="email">
                                 <label for="email">E-mail</label>
                             </div>
 
@@ -290,7 +290,13 @@
                                 <textarea name="text" id="text"></textarea>
                                 <label for="text">Your message</label>
                             </div>
-                            <button class="contacts__btn btn">Send message</button>
+                            <div class="contacts__triggers">
+                                <button class="contacts__btn btn">Send message</button>
+                                <div class="contacts__policy">
+                                    <input required type="checkbox">
+                                    <span>I have read and agree to the <a href="/policy.html">Privacy Policy.</a></span>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
