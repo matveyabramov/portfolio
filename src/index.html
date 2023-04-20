@@ -13,14 +13,14 @@
     <meta property="og:url" content="https://matveyabramov.github.io/">
     <meta property="og:title" content="Beginner Web Developer's portfolio">
     <meta property="og:description" content="Here you can look at my projects and find out more about me.">
-    <meta property="og:image" content="img/bg/main_bg.png">
+    <meta property="og:image" content="img/bg/main_bg.webp">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://matveyabramov.github.io/">
     <meta property="twitter:title" content="Beginner Web Developer's portfolio">
     <meta property="twitter:description" content="Here you can look at my projects and find out more about me.">
-    <meta property="twitter:image" content="img/bg/main_bg.png">
+    <meta property="twitter:image" content="img/bg/main_bg.webp">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -107,7 +107,11 @@
     <section class="about" id="about">
         <div class="container">
             <div class="about__container">
-                <img src="img/me.png" alt="me" class="about__img">
+                <picture>
+                    <source media="(max-width: 576px)" srcset="img/me-min.webp">
+                    <source media="(min-width: 577px)" srcset="img/me.webp">
+                    <img src="img/me.webp" alt="me" class="about__img">
+                </picture>
                 <div class="about__wrapper">
                     <h2 class="title title_fz16">About me</h2>
                     <div class="title">My name is Matvey</div>
@@ -224,7 +228,7 @@
         </div>
     </section>
 
-    <section class="portfolio" id="portfolio">
+     <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Portfolio</h2>
             <div class="title title__section-subtitle">My projects</div>
@@ -232,22 +236,22 @@
 
             <div class="portfolio__wrapper">
                 <a href="#" class="portfolio__item">
-                    <img src="img/projects/fill.png" alt="project" width="280" height="280">
+                    <img src="img/projects/fill.webp" alt="project" width="280" height="280">
                 </a>
                 <a href="#" class="portfolio__item">
-                    <img src="img/projects/fill.png" alt="project" width="280" height="280">
+                    <img src="img/projects/fill.webp" alt="project" width="280" height="280">
                 </a>
                 <a href="#" class="portfolio__item">
-                    <img src="img/projects/fill.png" alt="project" width="280" height="280">
+                    <img src="img/projects/fill.webp" alt="project" width="280" height="280">
                 </a>
                 <a href="#" class="portfolio__item vertical">
-                    <img src="img/projects/fill.png" alt="project" width="280" height="565">
+                    <img src="img/projects/fill.webp" alt="project" width="280" height="565">
                 </a>
                 <a href="#" class="portfolio__item">
-                    <img src="img/projects/fill.png" alt="project" width="280" height="280">
+                    <img src="img/projects/fill.webp" alt="project" width="280" height="280">
                 </a>
                 <a href="#" class="portfolio__item horizontal">
-                    <img src="img/projects/fill.png" alt="project" width="565" height="280">
+                    <img src="img/projects/fill.webp" alt="project" width="565" height="280">
                 </a>
             </div>
         </div>
@@ -256,8 +260,8 @@
     <section class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__container">
-                <img src="img/me.png" alt="me" class="contacts__img">
-                <div class="about__wrapper">
+                <img src="img/me.webp" alt="me" class="contacts__img">
+                <div class="contacts__wrapper">
                     <h2 class="title title_fz16">Contacts</h2>
                     <div class="title">Contact me</div>
                     <div class="divider"></div>
